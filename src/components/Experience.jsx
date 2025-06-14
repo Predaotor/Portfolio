@@ -14,22 +14,12 @@ import epamIcon from "../assets/tech/epam.png";
 
 const experiences = [
   {
-    title: "Python Developer Intern",
-    company_name: "EPAM Systems",
+    date: "April-May 2025 - ",
     icon: epamIcon,
-    iconBg: "#fff",
-    date: "June 2025 - Present",
-    points: [
-      "Gaining practical experience in Python web development and frameworks.",
-      "Working with relational (SQL & NoSQL) databases and Object-Relational Mappers (ORMs).",
-      "Exploring GenAI capabilities for Python engineers.",
-      "Strengthening cloud computing knowledge with leading cloud providers.",
-      "Developing skills in RESTful API design and networking fundamentals.",
-      "Adopting engineering excellence (EngX) practices.",
-      "Collaborating with multi-national teams and contributing to innovative projects.",
-      "Learning from top-notch educational content designed by experienced Python specialists.",
-      "Building a strong foundation for further specialization and career growth.",
-    ],
+    iconBg: "#383E56",
+    title: "AI Agents App",
+    company_name: "Freelance Project",
+    points: [ ],
   },
 ];
 
@@ -98,6 +88,49 @@ const Experience = () => {
             />
           ))}
         </VerticalTimeline>
+      </div>
+
+      <div className='mt-20'>
+        <h2 className={`${styles.sectionHeadText} text-center`}>
+          Projects.
+        </h2>
+
+        <div className='mt-10'>
+          <h3 className='text-white text-[20px] font-bold'>
+            🧠 AI Agents App – Intelligent Task Automation with Image Generation &
+            Token Management 
+            
+          </h3>
+          <p className='text-secondary text-[16px] font-semibold'>
+            Stack: Next.js 14, TypeScript, Tailwind CSS, Node.js (Express),
+            PostgreSQL, OpenAI API, Docker
+          </p>
+          <ul className='mt-5 list-disc ml-5 space-y-2'>
+            <li className='text-white-100 text-[14px] pl-1 tracking-wider'>
+              Designed and developed a full-stack AI application enabling users to
+              interact with autonomous AI agents for complex tasks, including
+              multi-agent coordination, advanced image generation, and persistent
+              chat memory.
+            </li>
+            <li className='text-white-100 text-[14px] pl-1 tracking-wider'>
+              Implemented secure, token-based access, rate-limited usage, and
+              persistent output saving.
+            </li>
+            <li className='text-white-100 text-[14px] pl-1 tracking-wider'>
+              Built a robust backend API with Express.js, integrated OpenAI for
+              LLM and image generation, and managed data persistence with
+              PostgreSQL.
+            </li>
+            <li className='text-white-100 text-[14px] pl-1 tracking-wider'>
+              Developed admin tools for session and usage monitoring using
+              PGAdmin.
+            </li>
+            <li className='text-white-100 text-[14px] pl-1 tracking-wider'>
+              Dockerized the application for streamlined deployment.
+            </li>
+          </ul>
+        </div>
+
       </div>
     </>
   );
