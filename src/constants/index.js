@@ -183,6 +183,7 @@ const projects = [
     ],
     image: project2,
     source_code_link: "https://github.com/Predaotor/AI-content-Generator",
+    live_link: "https://ai-content-generator-blush.vercel.app/", // <-- Added live link
   },
   {
     name: "Marketplace WebApp",
